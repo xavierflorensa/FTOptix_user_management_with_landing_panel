@@ -1,0 +1,14 @@
+Name: Groups
+Id: g=33ac98afcbbcd645bc8146197074cc43
+Type: GroupsCategoryFolder
+Children:
+- Name: Admin
+  Id: g=8a0f7f44da0ed3e4d371edbe92c78347
+  Type: GroupType
+- Name: Tech
+  Id: g=562110977e89a31a517e46c7c04a03d6
+  Type: GroupType
+  Children:
+  - Class: Reference
+    Type: HasRole
+    Target: g=a147e936caef2df7e110df6ea0032b9b
