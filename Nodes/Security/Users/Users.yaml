@@ -22,3 +22,13 @@ Children:
   - Class: Reference
     Type: HasRole
     Target: g=89c8aec9d58bd54a39e99f12fa631d94
+- Name: Juan
+  Id: g=6923544013f361133336710bd737094d
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=7f981bb83910fde60c9adca21d4afe17
+  - Class: Reference
+    Type: HasRole
+    Target: g=a147e936caef2df7e110df6ea0032b9b

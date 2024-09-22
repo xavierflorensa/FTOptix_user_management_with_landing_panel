@@ -415,7 +415,7 @@ Children:
           DataType: String
           ReferenceType: HasParameter
           ModellingRule: Optional
-          Value: "{0}*2+{1}*1"
+          Value: "{0}*2+{1}*1+{2}*3"
         - Name: ns=3;Source0
           Type: BaseDataVariableType
           DataType: BaseDataType
@@ -434,6 +434,15 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "{Session}/Groups/Tech"
+        - Name: ns=3;Source2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Groups/Office"
     - Class: Reference
       Target: ns=5;i=1181
       Direction: Forward
@@ -555,6 +564,11 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
     - Name: CurrentUserName
       Type: Label
       Children:
@@ -580,6 +594,11 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 20.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -594,12 +613,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 40.0
+      Value: 80.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 190.0
+      Value: 210.0
 - File: Screens/Screens.yaml
 - File: Panels/Panels.yaml
 - File: LoginForm/LoginForm.yaml

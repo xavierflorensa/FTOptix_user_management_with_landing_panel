@@ -12,3 +12,6 @@ Children:
   - Class: Reference
     Type: HasRole
     Target: g=a147e936caef2df7e110df6ea0032b9b
+- Name: Office
+  Id: g=7f981bb83910fde60c9adca21d4afe17
+  Type: GroupType
